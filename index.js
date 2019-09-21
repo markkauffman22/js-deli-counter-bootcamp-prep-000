@@ -29,13 +29,11 @@ function currentLine(line) {
      return ("The line is currently empty.");
   }
   for (var i = 0; i < line.length; i++) {
-       var pos = i + 1;
-    if (line.length === 0) {
-         outputStr = outputStr + pos + ".  " + line[i] + ", " ;
-       }
-       //expect(currentLine(["Bill", "Jane", "Ann"])).toEqual("The line is currently: 1. Bill, 2. Jane, 3. Ann");
-     }
+    var pos = i + 1;
+    outputStr = outputStr + pos + ". " + line[i] + " " ;
+    //expect(currentLine(["Bill", "Jane", "Ann"])).toEqual("The line is currently: 1. Bill, 2. Jane, 3. Ann");
+  }
     return (outputStr );
-   }
+}
 
  
