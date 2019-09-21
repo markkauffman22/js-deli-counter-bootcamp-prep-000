@@ -31,7 +31,7 @@ function currentLine(line) {
   for (var i = 0; i < line.length; i++) {
     var pos = i + 1;
     outputStr = outputStr + pos + ". " + line[i] ;
-    if pos != line.length {
+    if (pos != line.length) {
       outputStr = outputStr + ", "
     }
     //expect(currentLine(["Bill", "Jane", "Ann"])).toEqual("The line is currently: 1. Bill, 2. Jane, 3. Ann");
