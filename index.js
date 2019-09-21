@@ -25,12 +25,12 @@ function nowServing (katzDeliLine) {
 function currentLine(line) {
   var outputStr = "The line is currently: ";
   
-   if (line.length === 0) {
+  if (line.length === 0) {
      return ("The line is currently empty.");
-    }
+  }
   for (var i = 0; i < line.length; i++) {
        var pos = i + 1;
-
+    if (line.length === 0) {
          outputStr = outputStr + pos + ".  " + line[i] + ", " ;
        }
        //expect(currentLine(["Bill", "Jane", "Ann"])).toEqual("The line is currently: 1. Bill, 2. Jane, 3. Ann");
