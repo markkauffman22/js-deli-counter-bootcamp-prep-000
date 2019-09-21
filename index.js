@@ -22,7 +22,7 @@ function nowServing (katzDeliLine) {
   return ("Currently serving " + curPerson + ".");
 }
 
-function currentLine (line) {
+function currentLine(line) {
   var outputStr = "The line is currently: ";
   
    if (line.length === 0) {
