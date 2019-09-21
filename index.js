@@ -13,9 +13,11 @@ function nowServing (katzDeliLine) {
   if (katzDeliLine.length === 0) {
      return ("There is nobody waiting to be served!");
   }
-  // return the first person in line and remove that individual from the line
+  // run the currentLine function to 'process' the katzDeliLine queue (array)
   currentLine(katzDeliLine);
   var curPerson =  katzDeliLine[0];
+  
+  // return the first person in line and remove that individual from the line
   katzDeliLine.shift();
   return ("Currently serving " + curPerson + ".");
 }
