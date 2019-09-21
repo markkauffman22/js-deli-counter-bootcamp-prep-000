@@ -9,12 +9,12 @@ function takeANumber (curLinePeople, newPersonName) {
 }
 
 function nowServing (katzDeliLine) {
-  currentLine(katzDeliLine);
 
   if (katzDeliLine.length === 0) {
      return ("There is nobody waiting to be served!");
   }
   // return the first person in line and remove that individual from the line
+  
   var curPerson =  katzDeliLine[0];
   katzDeliLine.shift();
   return ("Currently serving " + curPerson + ".");
